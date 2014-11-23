@@ -5,10 +5,25 @@
 ## 3. set the inverse of matrix
 ## 4. get the inverse of matrix
 
-## Write a short comment describing this function
 
-makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(x = matrix()) 
+{
+        m <- NULL
+        set <- function (y)
+        {        
+        ## assigning value to object in an environment that is
+        ## is different from the current environment using <<- operator
 
+                x <<- y
+                m <<- NULL
+        }
+
+        get <- function () x
+        setMtrx <- function (solve) m <<- solve
+        getMtrx <- function () m
+        list (set = set, get = get,
+                setMtrx = setMtrx
+                getMtrx = getMtrx)
 }
 
 
