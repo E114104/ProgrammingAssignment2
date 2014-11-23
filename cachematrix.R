@@ -1,5 +1,5 @@
 ## makeCacheMatrix function creates a special "matrix", which is
-## a list containing a function to:
+## a list containing a function to
 ## 1. set the matrix
 ## 2. get the matrix
 ## 3. set the inverse of matrix
