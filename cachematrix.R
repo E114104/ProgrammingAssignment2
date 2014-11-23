@@ -35,6 +35,7 @@ makeCacheMatrix <- function(x = matrix())
 ## has not changed), then the cacheSolve should retrieve the inverse
 ## from the cache.
 
-cacheSolve <- function(x, ...) {
+cacheSolve <- function(x, ...) 
+{
         ## Return a matrix that is the inverse of 'x'
 }
